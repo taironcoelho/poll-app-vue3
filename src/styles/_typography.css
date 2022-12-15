@@ -1,0 +1,49 @@
+
+@font-face {
+  font-family: Stolzl;
+  src: url(../assets/fonts/stolzl/Stolzl-Book.woff);
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/stolzl/Stolzl-Book.woff') format('woff'),
+       url('../assets/fonts/stolzl/Stolzl-Book.ttf') format('truetype');
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: Stolzl;
+  src: url(../assets/fonts/stolzl/Stolzl-Regular.woff);
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/stolzl/Stolzl-Regular.woff') format('woff'),
+       url('../assets/fonts/stolzl/Stolzl-Regular.ttf') format('truetype');
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: Stolzl;
+  src: url(../assets/fonts/stolzl/Stolzl-Medium.woff);
+  font-style: normal;
+  font-weight: 500;
+  src: url('../assets/fonts/stolzl/Stolzl-Medium.woff') format('woff'),
+       url('../assets/fonts/stolzl/Stolzl-Medium.ttf') format('truetype');
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@font-face {
+  font-family: Stolzl;
+  src: url(../assets/fonts/stolzl/Stolzl-Bold.woff);
+  font-style: normal;
+  font-weight: 700;
+  src: url('../assets/fonts/stolzl/Stolzl-Bold.woff') format('woff'),
+       url('../assets/fonts/stolzl/Stolzl-Bold.ttf') format('truetype');
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

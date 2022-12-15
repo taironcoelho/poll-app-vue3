@@ -1,0 +1,7 @@
+@import '_tailwind.css';
+@import '_typography.css';
+
+body, #app {
+  @apply h-screen;
+  @apply overflow-auto;
+}

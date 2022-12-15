@@ -10,8 +10,13 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "autoprefixer": "^10",
+    "chart.js": "^4.0.1",
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "vue": "^3.2.13",
+    "vue-chartjs": "^5.0.1"
   },
   "devDependencies": {
     "@types/jest": "^27.0.1",
@@ -35,8 +40,10 @@
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
     "jest": "^27.0.5",
+    "pinia": "^2.0.28",
     "ts-jest": "^27.0.4",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "vue-cli-plugin-tailwind": "~3.0.0"
   },
   "eslintConfig": {
     "root": true,
@@ -51,7 +58,40 @@
     "parserOptions": {
       "ecmaVersion": 2020
     },
-    "rules": {},
+    "rules": {
+      "vue/component-name-in-template-casing": [
+        "error",
+        "PascalCase"
+      ],
+      "vue/no-unused-refs": "error",
+      "vue/camelcase": [
+        "error"
+      ],
+      "vue/comma-spacing": [
+        "error"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ],
+      "no-debugger": "off",
+      "no-console": "off",
+      "no-return-await": "error",
+      "comma-dangle": [
+        "error",
+        {
+          "arrays": "always-multiline",
+          "objects": "always-multiline",
+          "imports": "always-multiline",
+          "exports": "always-multiline",
+          "functions": "always-multiline"
+        }
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ]
+    },
     "overrides": [
       {
         "files": [
