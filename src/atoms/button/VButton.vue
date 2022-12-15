@@ -4,7 +4,7 @@ import { defineProps, defineEmits, PropType } from 'vue';
 const props = defineProps({
   label: { type: String, required: false, default: null },
   type: { type: String as PropType<'submit'|'button'|'reset'|undefined>, required: false, default: 'button' },
-  style: { type: String as PropType<'primary'|'secondary'>, required: false, default: 'primary' },
+  theme: { type: String as PropType<'primary'|'secondary'>, required: false, default: 'primary' },
   disabled: { type: Boolean, required: false, default: false },
   dataTest: { type: String, required: false, default: 'button' },
 });
@@ -30,8 +30,8 @@ const classes = {
     :disabled="props.disabled"
     :data-test="props.dataTest"
     @click="onClick()"
-    class="p-3 border rounded-md"
-    :class="classes[props.style]"
+    class="p-2 border rounded-md text-body-sm-sl"
+    :class="classes[props.theme]"
   >
     <slot>
       {{ props.label }}
