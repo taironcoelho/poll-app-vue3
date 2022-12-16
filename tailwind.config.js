@@ -80,9 +80,8 @@ module.exports = {
     },
     fontSize: { // https://tailwindcss.com/docs/font-size#font-sizes
       h1: ['64px', '80px'],
-      h2: ['40px', '48px'],
-      h3: ['32px', '40px'],
-      h4: ['24px', '32px'],
+      h2: ['32px', '40px'],
+      h3: ['24px', '32px'],
       h5: ['20px', '28px'],
       h6: ['16px', '24px'],
       sub1: ['24px', '36px'],

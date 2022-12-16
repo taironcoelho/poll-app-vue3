@@ -22,21 +22,23 @@ const isChecked = (key: string) => props.modelValue ? props.modelValue.key === k
 
 </script>
 <template>
-  <label
-    v-for="option in props.options"
-    :key="option.key"
-    :data-test="`${props.dataTest}-${option.key}-label`"
-    class="text-label text-grey-900 flex my-4"
-  >
-    <input
-      type="radio"
-      :name="props.name"
-      :id="option.key"
-      :checked="isChecked(option.key)"
-      :disabled="props.disabled"
-      :data-test="`${props.dataTest}-${option.key}-input`"
-      class="mr-1 w-4 h-4 p-1 border border-grey-300 rounded-full checked:border-blue-500 checked:bg-blue-500 focus:border-purple-500 disabled:border-grey-300 disabled:bg-grey-300"
-      @change="onInputChange(option)"
+  <div :data-test="props.dataTest">
+    <label
+      v-for="option in props.options"
+      :key="option.key"
+      :data-test="`${props.dataTest}-${option.key}-label`"
+      class="text-label text-grey-900 flex my-4"
     >
-    {{ option.label }}</label>
+      <input
+        type="radio"
+        :name="props.name"
+        :id="option.key"
+        :checked="isChecked(option.key)"
+        :disabled="props.disabled"
+        :data-test="`${props.dataTest}-${option.key}-input`"
+        class="mr-1 w-4 h-4 p-1 border border-grey-300 rounded-full checked:border-blue-500 checked:bg-blue-500 focus:border-purple-500 disabled:border-grey-300 disabled:bg-grey-300"
+        @change="onInputChange(option)"
+      >
+      {{ option.label }}</label>
+  </div>
 </template>
