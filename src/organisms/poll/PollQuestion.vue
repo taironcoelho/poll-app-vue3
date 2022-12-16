@@ -57,13 +57,13 @@ const dataTest = 'poll';
   </section>
   <form
     v-else
-    class="w-full h-full flex flex-col justify-between"
+    class="w-full h-full flex flex-col justify-between p-8"
     :data-test="`${dataTest}-form`"
     @submit.prevent="onVote()"
   >
     <div>
       <h2
-        class="text-h2 text-center p-8"
+        class="text-h2 text-center"
         :data-test="`${dataTest}-question`"
       >
         {{ question }}
@@ -82,7 +82,7 @@ const dataTest = 'poll';
       type="submit"
       :disabled="!selected"
       :data-test="`${dataTest}-vote-btn`"
-      class="mb-8 w-max flex self-end"
+      class="w-max flex self-end"
     />
   </form>
 </template>

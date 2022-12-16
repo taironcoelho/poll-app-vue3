@@ -7,14 +7,13 @@ import { usePollStore } from '@/stores/usePollStore';
 
 const store = usePollStore();
 const {
-  answers,
   updateQuestion,
   addAnswer,
   updateAnswer,
   deleteAnswer,
   reset,
 } = store;
-const { question, nAnswers } = storeToRefs(store);
+const { question, answers, nAnswers } = storeToRefs(store);
 const newAnswer = ref('');
 const isAddButtonDisabled = computed(() => question.value.length === 0 || newAnswer.value.length === 0);
 
