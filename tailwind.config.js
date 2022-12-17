@@ -43,9 +43,8 @@ module.exports = {
       sans: 'Stolzl',
     },
     fontSize: {
-      h1: ['64px', '80px'],
-      h2: ['32px', '40px'],
-      h3: ['24px', '32px'],
+      h1: ['32px', '40px'],
+      h2: ['24px', '32px'],
       label: ['14px', '16px'],
       body: ['14px', '20px'],
     },

@@ -50,7 +50,7 @@ const dataTest = 'poll';
     class="flex flex-col self-center text-center"
     :data-test="`${dataTest}-empty-state`"
   >
-    <h2 class="text-h3 mb-4">
+    <h2 class="text-h2 mb-4">
       Poll is disabled
     </h2>
     <p>Add at least 2 answers and one question to enable the pol. </p>
