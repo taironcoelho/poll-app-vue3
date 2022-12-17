@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { storeToRefs } from 'pinia';
 import BarChart from '@/molecules/chart/BarChart.vue';
 import { usePollStore } from '@/stores/usePollStore';
-import { storeToRefs } from 'pinia';
 
 const { question, votes } = storeToRefs(usePollStore());
 
