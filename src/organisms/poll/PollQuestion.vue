@@ -53,7 +53,7 @@ const dataTest = 'poll';
     <h2 class="text-h2 mb-4">
       Poll is disabled
     </h2>
-    <p>Add at least 2 answers and one question to enable the pol. </p>
+    <p>Add at least 2 answers and one question to enable the poll. </p>
   </section>
   <form
     v-else
