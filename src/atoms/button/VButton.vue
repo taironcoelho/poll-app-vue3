@@ -30,7 +30,7 @@ const classes = {
     :disabled="props.disabled"
     :data-test="props.dataTest"
     @click="onClick()"
-    class="p-2 border rounded-md text-body-sm-sl"
+    class="p-2 border rounded-md text-body"
     :class="classes[props.theme]"
   >
     <slot>

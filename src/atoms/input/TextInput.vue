@@ -30,7 +30,7 @@ const emit = defineEmits(['update:model-value']);
     :maxlength="props.maxLength"
     :data-test="props.dataTest"
     type="text"
-    class="font-light text-body-sm-sl text-grey-900 border border-solid border-grey-300 rounded-md disabled:bg-grey-250 hover:border-grey-250 p-2 "
+    class="font-light text-body text-grey-900 border border-solid border-grey-300 rounded-md disabled:bg-grey-250 hover:border-grey-250 p-2 "
     @input.="emit('update:model-value', $event.target?.value)"
   >
 </template>
