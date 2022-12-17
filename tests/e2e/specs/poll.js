@@ -7,6 +7,10 @@ describe('Poll', () => {
     cy.visit('/');
   });
 
+  it('should load poll on empty state', () => {
+    checkEmptyState();
+  });
+
   it('should be to create a Poll', () => {
     createPoll();
     cy.get('[data-test="question-form-question-input"]').should('have.value', mockQuestion);
@@ -25,7 +29,22 @@ describe('Poll', () => {
     vote();
     cy.get('[data-test="total-votes-total"]').should('have.text', ' Total votes: 2');
   });
+
+  it('should reset poll to empty state', () => {
+    createPoll();
+    vote();
+    cy.get('[data-test="question-form-reset-btn"]').click();
+    checkEmptyState();
+  });
 });
+
+function checkEmptyState () {
+  cy.get('[data-test="question-form-question-input"]').should('have.value', '');
+  cy.get('[data-test="question-form-answer-input-0"]').should('not.exist');
+  cy.get('[data-test="question-form-answer-input-1"]').should('not.exist');
+  cy.get('[data-test="poll-empty-state"]').should('exist');
+  cy.get('[data-test="total-votes-total"]').should('have.text', ' Total votes: 0');
+}
 
 function createQuestion () {
   cy.get('[data-test="question-form-question-input"]').type(mockQuestion);
