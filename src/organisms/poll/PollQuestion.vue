@@ -47,7 +47,7 @@ const dataTest = 'poll';
 <template>
   <section
     v-if="isPollDisabled"
-    class="flex flex-col self-center text-center"
+    class="flex flex-col self-center text-center p-8"
     :data-test="`${dataTest}-empty-state`"
   >
     <h2 class="text-h2 mb-4">
